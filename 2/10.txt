@@ -45,9 +45,9 @@ int main()
                 printf(" ");
             }        
         }
-		if (i != m - 1) {
-        	printf("\n");
-		}
+        if (i != m - 1) {
+            printf("\n");
+        }
     }
     
     return 0;

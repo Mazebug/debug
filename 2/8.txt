@@ -33,7 +33,7 @@ int main()
             for (k = 0; k < n; k++) {
                 result[i][j] += matrix_a[i][k] * matrix_b[k][j];
             }
-		}
+        }
     }
     
     for (i = 0; i < m; i++) {
@@ -43,9 +43,9 @@ int main()
                 printf(" ");
             }        
         }
-		if (i != m - 1) {
-        	printf("\n");
-		}
+        if (i != m - 1) {
+            printf("\n");
+        }
     }
     
     return 0;
