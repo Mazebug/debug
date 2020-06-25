@@ -18,12 +18,12 @@ double bisection(int p, int q, double (*func)(int, int, double))
     double a = -20;
     double b = 20;
     
-    while (fabs(f(p, q, (a + b) / 2)) >= EPSILON) {
-		if (f(p, q, (a + b) / 2) * f(p, q, b) < 0) {
-			a = (a + b) / 2;
-    	} else {
-        	b = (a + b) / 2;
-	 	}
+    while (fabs(func(p, q, (a + b) / 2)) >= EPSILON) {
+        if (func(p, q, (a + b) / 2) * func(p, q, b) < 0) {
+            a = (a + b) / 2;
+        } else {
+            b = (a + b) / 2;
+        }
     }
     return (a + b) / 2;
 }

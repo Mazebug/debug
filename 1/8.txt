@@ -21,10 +21,10 @@ double bisection(int p, int q, double (*func)(int, int, double))
     double fa, fb, fx;
     
     do {
-    	fa = f(p, q, a);
-        fb = f(p, q, b);
+    	fa = func(p, q, a);
+        fb = func(p, q, b);
         x = (a + b) / 2.0;
-        fx = f(p, q, x);
+        fx = func(p, q, x);
         
         if ((fa > 0 && fx > 0) || (fa < 0 && fx < 0)) {
         	a = x;
