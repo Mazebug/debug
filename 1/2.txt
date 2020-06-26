@@ -16,7 +16,7 @@
 
     double bisection(int p, int q, double (*func)(int, int, double))
     {
-	    double a = 20.0;
+        double a = 20.0;
         double b = -20.0;
         double m;
         while(1){
