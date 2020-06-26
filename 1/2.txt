@@ -21,16 +21,15 @@
         double m;
         while(1){
             m = (a + b) / 2;
-            if(fabs(func(p, q, m)) < EPSILON)
-            {
+            if(fabs(func(p, q, m)) < EPSILON) {
                 return m;
-            } else if (func(p, q, a) * func(p ,q ,m) < 0){
+            } else if (func(p, q, a) * func(p ,q ,m) < 0) {
                 b = m;
             } else {
                 a = m;
             }
         }
-}
+    }
 
     double f(int p, int q, double x) 
     {
