@@ -19,7 +19,6 @@ int main()
             if (numbers[m] < numbers[k]) {
                 m = k;
             }
-           
         }
         o = numbers[j];
         numbers[j] = numbers[m];
