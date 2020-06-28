@@ -44,14 +44,14 @@
                             printf(" ");
                         }
                 }		
-                for (j = column - 2; j >= start; j--) {
+                for (j = column - 2; j >= start && row - 1 !=start; j--) {
                     printf("%d", matrix[row-1][j]);
                     count++;
                     if(count != m * n){
                         printf(" ");
                     }
                 }
-                for (i = row - 2; i > start; i--) {
+                for (i = row - 2; i > start && column - 1 != start; i--) {
                     printf("%d", matrix[i][start]);
                     count++;
                     if(count != m * n){
