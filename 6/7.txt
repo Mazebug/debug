@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 void add(char);
+
 void deletel(char);
+
 int rwx = 0;
 
 int main()
