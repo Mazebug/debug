@@ -10,7 +10,7 @@ int main()
     
     scanf("%s", pms);
 
-    while (scanf("%s",change_pms[i++]) != EOF);
+    while (scanf("%s", change_pms[i++]) != EOF);
 
     for (i = 0; i < 3; i++) {
         if (pms[i] == 'r') {
