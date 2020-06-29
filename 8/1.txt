@@ -4,25 +4,22 @@
     int main() 
     {
         int n;
-        scanf("%d", &n);
+        scanf("%d\n", &n);
         char names[n][100];
-        char longest[100];
-        int z = 0;
-        int max = 0;
-        int i = 0;
-        while (scanf("%c", &names[i][z]) != EOF) {
-            while (names[i][z] != '\n') {
-                    z++;
-                    scanf("%c", &names[i][z]);
+        
+        for(int i = 0; i < n; i++){
+            fgets(names[i], 100, stdin);
+        }
+        char temp[100];
+        for(int i = 0; i < n - 1; i++){
+            for(int j = i; j < n - 1; j++){
+                if(strlen(names[j + 1]) > strlen(names[j])){
+                    strcpy(temp, names[j + 1]);
+                    strcpy(names[j + 1], names[j]);
+                    strcpy(names[j], temp);
+                }
             }
-            if(z > max) {
-                max = z;
-                strcpy(longest, names[i]);
-            }
-            i++;
-            z = 0;
-        }  
-        for(int j = 0; j < strlen(longest); j++)
-            printf("%c", longest[j]);
+        }
+        printf("%s", names[0]);
         return 0;
     }
