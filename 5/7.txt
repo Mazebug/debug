@@ -5,9 +5,9 @@
 void swap (char *b, char *c)
 {
     char *temp=(char*)malloc(21);
-    *temp = *b;
-    *b= *c;
-    *c = *temp;
+    strcpy(temp, b);
+    strcpy(b, c);
+    strcpy(c, temp);
 }
 
 int main()
@@ -28,7 +28,11 @@ int main()
         }
     }
     for (i = 0; i < m; i++) {
-        printf("%s\n", name[i]);    
+        if (i < 9) {
+            printf("%s\n", name[i]);
+        } else {
+            printf("%s", name[i]);
+        }
     }
     return 0;
 }
