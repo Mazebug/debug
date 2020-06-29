@@ -19,7 +19,11 @@ int main()
                 strcpy(n[k],m);
             }
         }
-    	printf("%s\n",n[i]); 
+        if (i < 9) {
+    	    printf("%s\n",n[i]);
+        } else {
+            printf("%s", n[i]);
+        }
     }
     return 0;
 }
