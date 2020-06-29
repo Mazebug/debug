@@ -11,6 +11,6 @@ int main()
     for (i = 4; i <= N; i++) {
         a[i] = a[i - 2] + a[i - 3];
     }
-    printf("%d",a[N]);
+    printf("%d", a[N]);
     return 0;
 }

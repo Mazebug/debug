@@ -16,7 +16,7 @@ int main()
             if (x * 2 + y * 3 == n) {
                 p = 1;
                 q = 1;
-                for (k = x + y; k >  y; k--) {
+                for (k = x + y; k > y; k--) {
                     p *= k;
                 }
                 for (k = 1; k <= x; k++) {
