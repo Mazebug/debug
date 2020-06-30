@@ -37,5 +37,5 @@
 
     double f(int p, int q, double x) 
     {
-    return p * x + q;
+        return p * x + q;
     }
