@@ -36,7 +36,9 @@ int main()
         } else {
             printf("NO");
     	}
-    }   
-   
+    }
+    if (m > 12) {
+        printf("NO");
+    }
     return 0;
 }
