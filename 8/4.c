@@ -5,15 +5,15 @@ int main()
 {
     int n;
     scanf("%d\n", &n);
-    char name[n][100];
-    char temp[100];
+    char name[n][101];
+    char temp[101];
 
     for(int i = 0; i < n; i++){
-        fgets(name[i], 100, stdin);        
+        gets(name[i]);       
     }
  
     for (int j = 0; j < n; j++){
-        for (int k = 0; k < n - j - 1; k++){
+        for (int k = 0; k <= n - j; k++){
             if(strlen(name[k]) < strlen(name[k + 1])) {
                 strcpy(temp, name[k]);
                 strcpy(name[k], name[k + 1]);
@@ -21,6 +21,8 @@ int main()
             }
         }
     }
+    
     printf("%s", name[0]);
+    
     return 0;
 }
