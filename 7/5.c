@@ -19,15 +19,21 @@ int main()
             } else {
                 printf("NO");
             }
-        } else if((year % 100 != 0 && year % 4 == 0) || year % 400 == 0) {
+        } else if( month == 2 && ((year % 100 != 0 && year % 4 == 0) || year % 400 == 0)) {
             if(day >= 1 || day <= 29) {
                 printf("YES");
             } else {
                 printf("NO");
             }       
         } else {
-            printf("NO");
+            if(day >= 1 || day <= 28){
+                printf("YES");
+            } else {
+                printf("NO");
+            }
         } 
-    } 
+    } else {
+        printf("NO");
+    }
     return 0;
 }
