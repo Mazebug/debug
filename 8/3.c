@@ -9,8 +9,9 @@ int main()
     size_t current;
     char maxName[200];
     char name[200];
+    
     for (int i = 0; i < n; i++) {
-        fgets(name, 100, stdin);
+        gets(name);
         current = strlen(name);
         if (current > max) {
            max = current;
@@ -18,5 +19,6 @@ int main()
         }
     }
     printf("%s", maxName);
+    
     return 0;
 }
