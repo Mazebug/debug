@@ -3,7 +3,7 @@
 int main() 
 {
     int n, i;
-    int arr[50];
+    int arr[51];
     scanf("%d", &n);
     arr[1] = 0;
     arr[2] = 1;
