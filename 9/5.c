@@ -5,7 +5,7 @@ int main()
     int N;
     int i;
     scanf("%d", &N);
-    int part[N];
+    int part[N + 1];
     part[1] = 0;
     part[2] = 1;
     part[3] = 1;
