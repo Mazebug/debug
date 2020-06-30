@@ -4,21 +4,17 @@
 int main()
 {
     int n;
-    scanf("%d", &n);
+    scanf("%d\n", &n);
     int i, j, k;
-    char a[100][100]={'0'};
-    char temp[100] = {'0'};
+    char a[100][101]={'0'};
+    char temp[101] = {'0'};
 
-    i = 0;
-    j = 0;
-    while (scanf("%c", &a[i][j]) != EOF) {
-        for (i = 0; i < n; i++) {
-            for (j = 0; j < 101; j++) {
-                scanf("%c", &a[i][j]);
-                if (a[i][j] == '\n') {
-                    a[i][j] = '\0';
-                    break;
-                }
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < 101; j++) {
+            scanf("%c", &a[i][j]);
+            if (a[i][j] == '\n') {
+                a[i][j] = '\0';
+                break;
             }
         }
     }
