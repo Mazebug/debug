@@ -4,7 +4,7 @@ int main()
 {
     int a,b,c;
     scanf("%d-%d-%d", &a, &b, &c);
-    if(b >12 || c > 31 || c < 1){
+    if(b > 12 || c > 31 || c < 1){
         printf("NO");
     } else if(b == 1 || b == 3 || b == 5 || b == 7 || b == 8 || b == 10 || b == 12){
         if(c <= 31 && c >= 1){
@@ -13,7 +13,7 @@ int main()
             printf("NO");
         } 
     } else if(b != 2) {
-        if(c > 30 && c < 1){
+        if(c > 30 || c < 1){
             printf("NO");
         } else {
             printf("YES");
