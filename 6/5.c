@@ -34,19 +34,24 @@ int main()
     while (scanf("%s", operation) != EOF) {
         if (operation[0] == '+' && operation[1] == 'r' && flag[0] == 0) {
             counter += 4;
+            flag[0] = 1;
         } else if (operation[0] == '+' && operation[1] == 'w' && flag[1] == 0) {
             counter += 2;
+            flag[1] = 1;
         } else if (operation[0] == '+' && operation[1] == 'x' && flag[2] == 0) {
-            counter += 1;   
+            counter += 1;
+            flag[2] = 1;
         } else if (operation[0] == '-' && operation[1] == 'r' && flag[0] == 1) {
-            counter -= 4; 
+            counter -= 4;
+            flag[0] = 0;
         } else if (operation[0] == '-' && operation[1] == 'w' && flag[1] == 1) {
             counter -= 2;
+            flag[1] = 0;
         } else if (operation[0] == '-' && operation[1] == 'x' && flag[2] == 1) {
             counter -= 1;
+            flag[2] = 0;
         }
     } 
     printf("%d", counter);
     return 0;
 }
-
