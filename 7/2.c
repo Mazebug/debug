@@ -14,7 +14,9 @@ int main()
         printf("YES");
     } else if((year % 100 != 0 && year % 4 == 0) && month == 2 && day >= 1 && day <= 29) {
         printf("YES");
-    }else {
+    } else if (day <= 28){
+        printf("YES");
+    } else {
         printf("NO");
     }
     return 0;
