@@ -45,10 +45,16 @@ void count_off(Node *head, int n, int k, int m)
     Node *temp, *prev;
     temp = head;
     prev = temp;
-    
-    while (temp->data != k) {
-        prev = temp;
-        temp = temp->next;
+    if(k == 1){
+        for(int i = 0; i < n; i++){
+            prev = temp;
+            temp = temp->next;
+        }
+    } else {
+        while (temp->data != k) {
+            prev = temp;
+            temp = temp->next;
+        }
     }
     
     int count = 0;
