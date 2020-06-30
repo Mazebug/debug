@@ -16,6 +16,9 @@ int main()
         if (n == 'x') {
             a[2] = 1;
         }
+        if (n == '\n') {
+            break;
+        }
         
     }
     while (scanf("%c" , &n) !=EOF) {
