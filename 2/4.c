@@ -23,7 +23,7 @@ int main()
     }
    int m3[m][m];
     
-    memset(m3,0,sizeof(int)*m*m);
+    memset(m3, 0, sizeof(int)*m*m);
     
     for (i = 0 ;i < m; i++) {
         for(j = 0; j < m; j++) {
