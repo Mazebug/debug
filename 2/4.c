@@ -25,12 +25,6 @@ int main()
     
     memset(m3,0,sizeof(int)*m*m);
     
-    for(i = 0; i < m; i++) {
-        for(j = 0; j < m; j++) {
-            printf("%d ", m3[i][j]);
-        }
-        printf("\n");
-    }
     for (i = 0 ;i < m; i++) {
         for(j = 0; j < m; j++) {
             for(k = 0; k < n; k++) {
